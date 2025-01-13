@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg ">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="toggle-btn">
+            <span class="navbar-toggler-icon "><i class="bi bi-list"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse w-100 " id="navbarTogglerDemo03">
+
+            <img src="/images/logo.png" id="logo" class="m-2" width="10%">
+
+
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#about-us-tetx">About Us</a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#COUNTRIES">Destinations</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#TIPS">Travel Tips</a>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#slider">Booking</a>
+                </li>
+
+                </li>
+            </ul>
+            <div class="me-4">
+                <button class="nav-btn border rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">sign in </button>
+                <button class="nav-btn border rounded-pill">signup</button>
+                <!-- <a href=""><i class="fa fa-phone" style="color: rgb(15, 92, 92);"></i></a> -->
+
+            </div>
+        </div>
+
+
+        <div class="collapse navbar-collapse w-100 " id="navbarTogglerDemo03">
+
+
+
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/pages/hotels.html">Stays <i class="fa fa-bed"></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link">
+                        Car Rentals <i class="fa fa-car"></i>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link">
+                        Flights <i class="fa fa-plane"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="#"> Airport Taxies <i class="fa fa-taxi" aria-hidden="true"></i></a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column ">
+            <button type="button" class="btn-close bg-dark " data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5 mx-auto" id="exampleModalLabel">Sign In</h1>
+ 
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+               <div class="mx-autow-75">
+                <button type="submit" class="btn btn-primary w-100  rounded-pill">login</button>
+                <a href="">dont have an account?</a>
+
+            </div>
+              </form>
+        </div>
+        <div class="modal-footer d-flex flex-column">
+          <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
+            <i class="bi bi-google mx-75">
+
+          </i>Login with google
+          <button type="button" class="btn btn-primary "><i class="bi bi-facebook mx-75"></i>Login with FB</button>
+        </button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid" id="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="/images/resort.mp4" type="video/mp4">
+            <!-- Include other video formats as needed -->
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Text container -->
+
+        <div class="card-body " id="text-container">
+            <h1 class="card-title" id="animate" >Put The World In Your Hands</h1>
+            <p class="card-text">This is some descriptive text about your website.</p>
+
+            <button type="button" id="video-btn">Book Your Trip</button>
+            <form class="form-inline w-100  mt-4 d-flex justify-content-center">
+                <input class="form-control w-75 border-0 rounded-0 opacity-75  " type="search" placeholder="Search"
+                    aria-label="Search" id="input-box">
+
+                <div class=" border-0" id="search">
+                    <i class="fa fa-search" style="font-size:32px;padding: 3px;color: rgb(252, 250, 250);" id="search-icon"></i>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="container  text-center my-4 p-4 border-0  " id="about-us-tetx" >
+        <div class="card-body">
+            <h2 class="card-title display-6" id="hero-text">Welcome to Adventure Travels</h2>
+
+            <p class="card-text p-4 " id="hero-text" >Explore the World with Us<br>
+            <blockquote id="hero-text" > At Adventure Travels, we believe in the transformative power of travel. Whether
+                you're seeking
+                adrenaline-pumping adventures, serene getaways, or cultural immersions, we've got you covered. Our
+                mission is to curate unforgettable experiences that cater to every type of traveler."</p>
+            </blockquote>
+
+        </div>
+    </div>
+
+
+    <div class="container my-4" id="TIPS">
+        <div class="card mb-3">
+            <div class="row">
+                
+                <div class="col-md-4 mt-5" >
+                  <div class="card-body " >
+                        <h5 class="card-title display-6" data-aos="fade-right" >WE'LL SHOW YOU THE WORLD</h5>
+                        <p class="card-text"  >AND IN AN ENTIRELY NEW LIGHT.</p>
+                        <p class="card-text"  >We curate trips for travellers who want to see the world up close –
+                            foregoing 'tick lists' and tourist traps in favour of deeper and more intimate connections
+                            with the world and its cultures.<br><br>
+
+                            Today, we take people to all seven continents, designing all of our trips from the ground
+                            up. This way, no two journeys are ever quite alike. Trekking with the tribes of Borneo;
+                            learning the trade of tanning in Morocco; joining the jostling crowds of Sienna's palio.
+                            It's a wide, wild world. And your travels should be the same.</p>
+                    </div>
+                </div>
+                
+
+                <div class="col-md-4"><img src="/images/burj.webp" class="img-fluid rounded-start" alt="" data-aos="fade-up" ></div>
+                <div class="col-md-4"><img src="/images/paris.jpeg" class="img-fluid rounded-start" alt=""  data-aos="fade-up"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------slider---------------->
+    <div class="container" id="slider"   >
+      
+      <h1>hotels</h1>
+        <div class="row" >
+        
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators ">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+    
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4" >
+                                    <div class="single-box">
+                                        <div class="img-area" >
+                                            <img src="/images/hotel1.webp"  alt="" width="100%">
+                                        </div>
+                                        <div class="img-text ">
+                                            <h1>stay in dubai</h1>
+                                            <h2>$100</h2>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img src="/images/hotel2.jpeg" alt="" width="100%" height="100%">
+                                        </div>
+                                        <div class="img-text">
+                                            <h1>stay in italy</h1>
+                                            <h2>$200</h2>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img src="/images/hotel3.jpeg" alt="" width="100%" height="100%">
+                                        </div>
+                                        <div class="img-text">
+                                            <h1>stay in japan</h1>
+                                            <h2>$300</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img src="/images/hotel4.jpeg" alt="" width="100%" height="100%">
+                                        </div>
+                                        <div class="img-text">
+                                            <h1>stay in paris</h1>
+                                            <h2>$400</h2>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img src="/images/hotel5.jpeg" alt="" width="100%" height="100%">
+                                        </div>
+                                        <div class="img-text">
+                                            <h1>stay in greece</h1>
+                                            <h2>$500</h2>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img src="/images/hotel7.webp" alt="" width="100%" height="100%">
+                                        </div>
+                                        <div class="img-text">
+                                            <h1>korea</h1>
+                                            <h2>$600</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!----------slider---------------->
+
+
+
+
+    <div class="container my-5"  >
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="/images/moun.jpeg" class="img-fluid rounded-start" alt="..." data-aos="flip-left">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="card-title display-6" >UNIQUE, DIFFERENT, AND DARING</h1>
+                        <p class="card-text" data-aos="fade-left">AND WE WANT TO MAKE THE REMARKABLE HAPPEN</p>
+                        <p class="card-text" data-aos="fade-left">The journeys we make, make us. We learnt this from legendary travel writer
+                            Bruce Chatwin, speaking about the importance of living a “restless” life. When we plan trips
+                            for our clients, we want to strip away the barriers that can get between them and the world.
+                            They – you – are searching for the unexpected, the unfamiliar, the unknown. Restlessness
+                            helps.<br><br>
+
+                            But so does expertise. Over the years, we've assembled a team of travel fanatics – people
+                            who live and breathe the world and everything in it. They're starry-eyed wanderers with the
+                            organisational nous of precision engineers. These are the people who'll help you find your
+                            way. Even if that means getting 'lost'.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- 
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/img1.jpeg" class="d-block w-100" alt="..." height="700px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img2.webp" class="d-block w-100" alt="..." height="700px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/img3.webp" class="d-block w-100" alt="..." height="700px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+
+
+    <div class="container-fluid" id="COUNTRIES">
+        <div class="w-100">
+            <hr>
+            <h3 class="display-6 text-center text-dark" data-aos="flip-right">Countries To Visit</h3>
+            <hr>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col ">
+                <div class="card position-relative" style="width: 28rem;">
+                    <img src="images/italy.avif" class="card-img-top" alt="..." data-aos="flip-down">
+                    <div class="card-body position-absolute bottom-0 text-white bg-dark w-100 opacity-75">
+                        <h5 class="card-title ">Italy</h5>
+
+                        the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-light">
+                <div class="card position-relative" style="width: 28rem;">
+                    <img src="/images/japan.avif" class="card-img-top" alt="..." data-aos="flip-down">
+                    <div class="card-body position-absolute bottom-0 text-white bg-dark w-100 opacity-75">
+                        <h5 class="card-title">Japan</h5>
+
+                        the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col bg-light">
+                <div class="card position-relative" style="width: 28rem;">
+                    <img src="/images/greece.avif" class="card-img-top" alt="..." data-aos="flip-down">
+                    <div class="card-body position-absolute bottom-0 text-white bg-dark w-100 opacity-75">
+                        <h5 class="card-title">Greece</h5>
+
+                        the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row justify-content-between mt-4">
+            <div class="col bg-light">
+                <div class="card position-relative" style="width: 28rem;">
+                    <img src="images/paris.jpeg" class="card-img-top" alt="..." data-aos="flip-down">
+                    <div class="card-body position-absolute bottom-0 text-white bg-dark w-100 opacity-75">
+                        <h5 class="card-title ">Paris</h5>
+
+                        the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-light">
+                <div class="card position-relative" style="width: 28rem;">
+                    <img src="/images/thailand.jpeg" class="card-img-top" alt="..." data-aos="flip-down">
+                    <div class="card-body position-absolute bottom-0 text-white bg-dark w-100 opacity-75">
+                        <h5 class="card-title">Japan</h5>
+
+                        the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col bg-light">
+                <div class="card position-relative" style="width: 28rem;">
+                    <img src="/images/spain.jpeg" class="card-img-top" alt="..." data-aos="flip-down">
+                    <div class="card-body position-absolute bottom-0 text-white bg-dark w-100 opacity-75">
+                        <h5 class="card-title">Greece</h5>
+
+                        the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="container w-75 bg-dark text-white my-5 " id="contact-us-form">
+        <h1 class="h1 text-center display-6">Contact Us</h1>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">First Name</label>
+            <input type="text" class="form-control w-100" id="exampleFormControlInput1" placeholder="first name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+            <input type="text" class="form-control w-100" id="exampleFormControlInput1" placeholder="Last Name">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+            <input type="number" class="form-control w-100" id="exampleFormControlInput1" placeholder="+92">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label ">password</label>
+            <input type="password" class="form-control  w-100" id="exampleFormControlInput1" placeholder="password123#">
+          </div>
+          <div class="mb-3"> 
+            <label for="exampleFormControlTextarea1" class="form-label  ">Enter Your Comments</label>
+            <textarea class="form-control w-100" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          
+    </div>
+
+
+
+
+
+
+
+  <script src="app.js">
+ 
+  </script>
+</body>
+
+</html>
